@@ -1,0 +1,26 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 105px;
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__title {
+		text-align: unset;
+		width: 735px;
+	}
+	&__subtitle {
+		text-align: unset;
+		width: 735px;
+		margin-top: 50px;
+	}
+	&__btn {
+		margin-top: 50px;
+		border-radius: 15px 15px 15px 0;
+	}
+}
