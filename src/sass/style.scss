@@ -45,6 +45,24 @@ a {
 	text-decoration: none;
 	color: unset;
 }
+
+.separator {
+	position: relative;
+	display: block;
+	margin: 0 auto 13px;
+	width: 135px;
+	height: 5px;
+	background-color: var(--first_color);
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 135px;
+		height: 5px;
+		top: 13px;
+		background-color: var(--first_color);
+	}
+}
 @import 'base/mixins';
 @import 'base/variables';
 @import 'blocks/btn/btn';
@@ -52,3 +70,6 @@ a {
 @import 'blocks/menu/menu';
 @import 'blocks/header/header';
 @import 'blocks/about/about';
+@import 'blocks/project/project';
+@import 'blocks/testimonial/testimonial';
+@import 'blocks/contacts/contacts';

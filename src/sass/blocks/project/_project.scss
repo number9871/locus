@@ -1,0 +1,45 @@
+.project {
+    padding-top: 120px;
+    .separator {
+        margin-top: 50px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 95px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 453px;
+        min-height: 650px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        color: var(--first_color);
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--fourth_color);
+    }
+    &__img {
+        width: 450px;
+        height: 450px;
+        border-radius: 0 0 100% 100%;
+        overflow: hidden;
+        object-fit: cover;
+        img {
+            max-width: 100%;
+        }
+        &_round {
+            border-radius: 100%;
+        }
+    }
+}

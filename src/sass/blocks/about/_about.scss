@@ -39,6 +39,7 @@
 		height: 100px;
 		border-radius: 65px;
 		background: #FFFFFF;
+		transition: .2s;
 		&::before {
 			content: '';
 			display: block;
@@ -50,7 +51,9 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			
+		}
+		&:hover {
+			box-shadow: inset 2px 2px 10px #000;
 		}
 		img {
 			position: absolute;

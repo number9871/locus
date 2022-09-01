@@ -1,0 +1,86 @@
+.testimonial {
+    padding-top: 250px;
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1250px;
+    }
+    &__brend {
+        width: 25%;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+    &__card {
+        margin-top: 60px;
+        position: relative;
+        display: flex;
+        height: 700px;
+        background-color: var(--second_color);
+        overflow: hidden;
+    }
+    &__img {
+        position: relative;
+        width: 615px;
+        img{
+            display: block;
+            position: relative;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px 105px 119px 137px;
+        width: 997px;
+    }
+    &__achievements {
+        display: flex;
+        justify-content: space-between;
+        div {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            color: var(--first_color);
+            span {
+                font-weight: 800;
+                font-size: 70px;
+                line-height: 70px;
+            }
+        }
+    }
+    &__quote {
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 38px;
+        color: var(--fourth_color);
+        z-index: 2;
+        span {
+            font-style: italic;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 38px;
+            color: var(--first_color);
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url('../icons/testimonial/“.svg') center no-repeat;
+            width: 100px;
+            height: 100px;
+            left: -40px;
+            top: -60px;
+            z-index: -1;
+        }
+    }
+}
