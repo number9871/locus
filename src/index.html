@@ -45,7 +45,20 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+	<nav class="menu__nav__mobile" id="menu">
+		<div class="menu__nav__mobile__close" id="menu-close"></div>
+		<a href="" class="menu__link">Home</a>
+		<a href="" class="menu__link">Contact</a>
+		<a href="" class="menu__link">Location</a>
+		<a href="" class="menu__link">About Us</a>
+	</nav>
+	<div class="overlay" id="menu-overlay"></div>
 	<div class="menu">
+		<div class="menu__nav__button" id="menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 		<div class="menu__wrapper">
 			<a href="#" class="menu__logo">
 				<img src="icons/logo/logo.svg" alt="">
@@ -185,16 +198,13 @@
 	</div>
 	<form action="" class="contacts__form">
 		<div class="contacts__input">
-			<input required name="name" id="name" type="text">
-			<label for="name">Full name</label>
+			<input required name="name" id="name" type="text" placeholder="Full name">
 		</div>
 		<div class="contacts__input">
-			<input required name="email" id="email" type="email">
-			<label for="email">Email address</label>
+			<input required name="email" id="email" type="email" placeholder="Email address">
 		</div>
 		<div class="contacts__textarea">
-			<input type="text" id="text">
-			<label for="text">Description</label>
+			<textarea placeholder="Description" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
 		</div>
 		<button class="contacts__btn">Send now</button>
 	</form>
@@ -202,6 +212,7 @@
 
 
 
-	<link rel="script" href="js/script.js">
+<!-- <link rel="script" href="js/script.js"> -->
+<script src="js/script.js"></script>
 </body>
 </html>

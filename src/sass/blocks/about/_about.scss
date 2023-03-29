@@ -3,14 +3,14 @@
 	padding-top: 120px;
 	&__video {
 		margin-top: 70px;
-		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: minmax(350px);
+		display: flex;
 	}
 	&__img {
+		width: 66%;
 		background: url('../img/about_us/video.png') center center/cover no-repeat
 	}
 	&__descr {
+		width: 33%;
 		padding: 70px 106px 160px 115px;
 		min-height: 350px;
 		border-radius: 0px 10px 10px 0px;
@@ -70,15 +70,22 @@
 	&__us {
 		padding-left: 142px;
 	}
+	&__photo {
+		min-width: 40%;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+		}
+	}
 	&__title {
-		width: 490px;
+		// width: 490px;
 		font-weight: 700;
 		font-size: 40px;
 		line-height: 60px;
 	}
 	&__subtitle {
 		margin-top: 50px;
-		width: 705px;
+		// width: 705px;
 		font-weight: 500;
 		font-size: 30px;
 		line-height: 45px;

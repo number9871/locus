@@ -3,20 +3,28 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 70px;
 	padding-top: 105px;
+	&__wrapper {
+		width: 50%;
+	}
 	&__img {
+		width: 100%;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	&__bg {
+		width: 100%;
+	}
 	&__title {
 		text-align: unset;
-		width: 735px;
+		// width: 735px;
 	}
 	&__subtitle {
 		text-align: unset;
-		width: 735px;
+		// width: 735px;
 		margin-top: 50px;
 	}
 	&__btn {

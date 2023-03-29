@@ -63,6 +63,19 @@ a {
 		background-color: var(--first_color);
 	}
 }
+
+.overlay {
+	position: fixed;
+	right: 0;
+	width: 0;
+	height: 100vh;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, .3);
+	transition: all .4s;
+	&_active {
+		width: 100vw;
+	}
+}
 @import 'base/mixins';
 @import 'base/variables';
 @import 'blocks/btn/btn';
@@ -73,3 +86,4 @@ a {
 @import 'blocks/project/project';
 @import 'blocks/testimonial/testimonial';
 @import 'blocks/contacts/contacts';
+@import 'base/media';
